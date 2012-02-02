@@ -4,7 +4,7 @@ Awesome.
 Here&rsquo;s how to get on the list:
 
 * Fork this repositry.
-* Add your name to the list. Literally edit the HTML:
+* Add your name to the list. Literally edit `index.html`:
 
   `<li>Ethan Sherbondy</li>`
 
