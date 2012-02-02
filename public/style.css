@@ -14,7 +14,7 @@ dl a:active,#attend a:active{top:1px}
 dl{width:480px;float:left;overflow:hidden}
 dt{font-family:Courier;opacity:.8;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);float:left;width:160px;margin-bottom:16px}
 dd{float:left;width:320px;margin-bottom:16px}
-#map{width:448px;height:300px;margin-left:32px;float:left;background:#ccc}
+#map{width:448px;height:300px;margin-left:32px;float:left;background:#ccc;text-shadow:none}
 #attend{clear:both;padding-top:32px}
 #pull{font-size:24px;display:block;text-align:center;margin:16px 0}
 .attendees{overflow:hidden;padding-bottom:16px;}
