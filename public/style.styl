@@ -1,0 +1,82 @@
+@import 'nib'
+
+global-reset()
+
+green = #0ad833
+
+body
+  font-family 'Gill Sans'
+  color #fff
+  text-shadow 0px 1px 0px #000
+  background url('irongrip.png')
+  width 960px
+  margin 0 auto
+  padding 32px 0
+  font-size 20px
+  line-height 1.25
+
+h1, h2, h3
+  color green
+  line-height 1.5
+
+h1
+  font-size 64px
+  margin-bottom 32px
+h2
+  font-size 32px
+a
+  background green
+  text-decoration none
+  color #fff
+  padding 4px 8px
+  line-height 2
+  border-radius 8px
+  position relative
+  &:hover
+    background darken(green, 20%)
+  &:active
+    top 1px
+
+dl
+  width 480px
+  float left
+  overflow hidden
+
+dt
+  font-family Courier
+  opacity 0.8
+  float left
+  width 160px
+  margin-bottom 16px
+
+dd
+  float left
+  width 320px
+  margin-bottom 16px
+
+#map
+  width 448px
+  height 300px
+  margin-left 32px
+  float left
+  background #ccc
+
+#attend
+  clear both
+  padding-top 16px
+
+#pull
+  font-size 24px
+  display block
+  text-align center
+  margin 16px 0
+
+.attendees
+  overflow hidden
+  padding-bottom 16px
+
+  & li
+    width 448px
+    padding 16px
+    font-size 20px
+    float left
