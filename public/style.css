@@ -8,9 +8,9 @@ body{font-family:'Gill Sans';color:#fff;text-shadow:0 1px 0 #000;background:url(
 h1,h2,h3{color:#0ad833;line-height:1.5}
 h1{font-size:64px;margin-bottom:32px}
 h2{font-size:32px}
-a{background:#0ad833;text-decoration:none;color:#fff;padding:4px 8px;line-height:2;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;position:relative;}
-a:hover{background:#08ad29}
-a:active{top:1px}
+dl a,#attend a{background:#0ad833;text-decoration:none;color:#fff;padding:4px 8px;line-height:2;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;position:relative;}
+dl a:hover,#attend a:hover{background:#08ad29}
+dl a:active,#attend a:active{top:1px}
 dl{width:480px;float:left;overflow:hidden}
 dt{font-family:Courier;opacity:.8;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);float:left;width:160px;margin-bottom:16px}
 dd{float:left;width:320px;margin-bottom:16px}

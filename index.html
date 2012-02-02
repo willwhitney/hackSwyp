@@ -5,8 +5,22 @@
         <title>Swyp Hackathon, February 18th</title>
 
         <link rel="stylesheet" href="public/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <script src="public/script.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+        </script>
+        <script src="public/jquery.ui.map.min.js"></script>
+
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $('#map').gmap({'callback':function(){
+                var self = this;
+                self.addMarker({'position': '42.366899,-71.080127', 
+                  'bounds':true}).click(function(){
+                    window.location = 'http://maps.google.com/maps?q=222+3rd+Street+4th+floor+Cambridge,+MA+02142+&hl=en&sll=42.366899,-71.080127&sspn=0.010765,0.022724&hnear=222+3rd+St,+Mid-Cambridge,+Massachusetts+02141&t=m&z=16&iwloc=A';
+                });
+            }});
+          });
+        </script>
     </head>
 
     <body>
