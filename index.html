@@ -11,14 +11,18 @@
         <script src="public/jquery.ui.map.min.js"></script>
 
         <script type="text/javascript">
+          var position = {'position': '42.366899,-71.080127'};
           $(document).ready(function(){
-            $('#map').gmap({'callback':function(){
-                var self = this;
-                self.addMarker({'position': '42.366899,-71.080127', 
-                  'bounds':true}).click(function(){
-                    window.location = 'http://maps.google.com/maps?q=222+3rd+Street+4th+floor+Cambridge,+MA+02142+&hl=en&sll=42.366899,-71.080127&sspn=0.010765,0.022724&hnear=222+3rd+St,+Mid-Cambridge,+Massachusetts+02141&t=m&z=16&iwloc=A';
-                });
-            }});
+              $('#map').gmap({'center':position['position']});
+              $('#map').gmap('option', 'zoom', 14);
+
+              $('#map').gmap().bind('init', function(event, map){
+                $('#map').gmap('addMarker', position)
+                  .click(function(){
+                    window.location = 'http://maps.google.com/maps?q='
+                                     +'222+3rd+Street+4th+floor+Cambridge,+MA+02142';
+               });
+            });
           });
         </script>
     </head>
