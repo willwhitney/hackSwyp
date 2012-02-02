@@ -15,6 +15,9 @@ body
   font-size 20px
   line-height 1.25
 
+em
+  font-style italic
+
 h1, h2, h3
   color green
   line-height 1.5
@@ -25,7 +28,7 @@ h1
 h2
   font-size 32px
 
-dl a, #attend a
+#location a, #attend a
   background green
   text-decoration none
   color #fff
@@ -55,16 +58,30 @@ dd
   width 320px
   margin-bottom 16px
 
+p
+  margin-bottom 16px
+
 #map
-  width 448px
-  height 300px
-  margin-left 32px
   float left
+  width 480px
+  overflow hidden
+
+  #location, #gmap
+    width 448px
+    margin-left 32px
+
+  #location
+    text-align right
+
+#gmap
+  height 300px
+  margin-bottom 16px
   background #ccc
   text-shadow none
 
 #attend
   clear both
+  width 100%
   padding-top 32px
 
 #pull

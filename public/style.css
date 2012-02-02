@@ -5,17 +5,22 @@ table{border-collapse:separate;border-spacing:0;vertical-align:middle}
 caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
 a img{border:none}
 body{font-family:'Gill Sans';color:#fff;text-shadow:0 1px 0 #000;background:url("irongrip.png");width:960px;margin:0 auto;padding:32px 0;font-size:20px;line-height:1.25}
+em{font-style:italic}
 h1,h2,h3{color:#0ad833;line-height:1.5}
 h1{font-size:64px;margin-bottom:32px}
 h2{font-size:32px}
-dl a,#attend a{background:#0ad833;text-decoration:none;color:#fff;padding:4px 8px;line-height:2;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;position:relative;}
-dl a:hover,#attend a:hover{background:#08ad29}
-dl a:active,#attend a:active{top:1px}
+#location a,#attend a{background:#0ad833;text-decoration:none;color:#fff;padding:4px 8px;line-height:2;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;position:relative;}
+#location a:hover,#attend a:hover{background:#08ad29}
+#location a:active,#attend a:active{top:1px}
 dl{width:480px;float:left;overflow:hidden}
 dt{font-family:Courier;opacity:.8;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);float:left;width:160px;margin-bottom:16px}
 dd{float:left;width:320px;margin-bottom:16px}
-#map{width:448px;height:300px;margin-left:32px;float:left;background:#ccc;text-shadow:none}
-#attend{clear:both;padding-top:32px}
+p{margin-bottom:16px}
+#map{float:left;width:480px;overflow:hidden;}
+#map #location,#map #gmap{width:448px;margin-left:32px}
+#map #location{text-align:right}
+#gmap{height:300px;margin-bottom:16px;background:#ccc;text-shadow:none}
+#attend{clear:both;width:100%;padding-top:32px}
 #pull{font-size:24px;display:block;text-align:center;margin:16px 0}
 .attendees{overflow:hidden;padding-bottom:16px;}
 .attendees li{width:448px;padding:16px;font-size:20px;float:left}

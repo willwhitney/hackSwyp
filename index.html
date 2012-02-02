@@ -13,11 +13,11 @@
         <script type="text/javascript">
           var position = {'position': '42.366899,-71.080127'};
           $(document).ready(function(){
-              $('#map').gmap({'center':position['position']});
-              $('#map').gmap('option', 'zoom', 14);
+              $('#gmap').gmap({'center':position['position']});
+              $('#gmap').gmap('option', 'zoom', 14);
 
-              $('#map').gmap().bind('init', function(event, map){
-                $('#map').gmap('addMarker', position)
+              $('#gmap').gmap().bind('init', function(event, map){
+                $('#gmap').gmap('addMarker', position)
                   .click(function(){
                     window.location = 'http://maps.google.com/maps?q='
                                      +'222+3rd+Street+4th+floor+Cambridge,+MA+02142';
@@ -39,28 +39,33 @@
         <dt>Who:</dt>
         <dd>
           Any MIT student who likes to hack on software.
+          Local devs who want to join the fun.
         </dd>
             
         <dt>What?</dt>
         <dd>
-	    Our theme is 'expression;' you, assisted by the likes of local devs, will hack on a application that best expresses <i>something</i>. <br />
-	    By 1:30AM, your app will hopefully win the cheering, geering, laughing support of your peers, and thus the startup gift basket containing various APIs, magic sample code, or promos from attending developers.<br />
-	    Every two hours we'll release an additional feature that your app needs to contain, and at 11pm, there'll be lots of food.
+          <p>Our theme is <em>expression</em>; you, assisted by the likes of local devs, 
+          will hack on an application that best expresses <em>something</em>.</p>
+          <p>By 1:30AM, your app will hopefully win the cheering, geering, laughing 
+            support of your peers, and thus the startup gift basket containing various 
+            APIs, magic sample code, or promos from attending developers.</p>
+          <p>Every two hours we'll announce an additional feature that your app 
+            should incorporate, and at 11pm, there'll be lots of food.</p>
         </dd>
-            
-        <dt>Where:</dt>
-        <dd>
+      </dl>
+
+      <div id="map">
+        <div id="gmap"></div>
+
+        <div id="location">
           <p><a href="http://ipursuits.org/">Intrepid Labs</a></p>
-          <p class="location">
+          <p class="address">
             222 3rd Street <br>
             4th floor <br>
             Cambridge, MA 02142
           </p>
-
-        </dd>
-      </dl>
-
-      <div id="map"></div>
+        </div>
+      </div>
 
       <div id="attend">
         <h2>You Coming? These Guys are:</h2>
